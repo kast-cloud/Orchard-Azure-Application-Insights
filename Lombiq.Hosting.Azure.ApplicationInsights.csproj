@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-    <TargetFramework>$(AspNetCoreTargetFramework)</TargetFramework>
+    <TargetFrameworks>$(AspNetCoreTargetFrameworks)</TargetFrameworks>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <LangVersion>9.0</LangVersion>
     <DefaultItemExcludes>$(DefaultItemExcludes);.git*;node_modules\**;Tests\**</DefaultItemExcludes>
   </PropertyGroup>
-
 
   <ItemGroup>
     <None Remove="node_modules\**" />
@@ -27,6 +27,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Libraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries.csproj" />
+    <ProjectReference Include="..\..\Libraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries.csproj" />
   </ItemGroup>
 </Project>
